@@ -2,10 +2,29 @@
 {
   fieldset
   {
-    margin-bottom: 5px;
+      margin-bottom: 5px;
   }
   .helptext
   {
       color: #777
   }
+  h3 .group-toggle
+  {
+      cursor: default;
+
+      .glyphicon
+      {
+          font-size: 70%;
+          margin-right: .2em
+      }
+  }
+}
+
+.download-sidebar
+{
+    button[disabled]
+    {
+        pointer-events: auto; //see https://github.com/twbs/bootstrap/issues/9511
+        cursor: wait;
+    }
 }
